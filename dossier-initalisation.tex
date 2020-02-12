@@ -1,0 +1,143 @@
+%% Erläuterungen zu den Befehlen erfolgen unter
+%% diesem Beispiel.
+
+%% Article Template
+\documentclass[]{scrartcl}
+
+
+%% UTF8 Encoding
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage[margin=5cm]{geometry}% http://ctan.org/pkg/geometry
+\usepackage{lmodern}
+\usepackage{subcaption}
+\usepackage{setspace}
+\usepackage[french]{babel}
+\usepackage{csquotes}
+\usepackage{pdfpages}
+% appendix
+\usepackage[titletoc]{appendix}
+
+\setstretch{0.99}
+
+%Tabellen mit fixen Breiten
+\usepackage{tabularx}
+
+%% Grafik
+\usepackage{graphicx} 
+\newcommand{\name}{Insta.edit}
+
+%% Links im PDF
+\usepackage{hyperref}
+\usepackage{rotating}
+\usepackage{lscape}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage[titles]{tocloft}
+\pagestyle{fancy}
+\rhead{\includegraphics[scale=0.15]{img/insa-logo}}
+\chead{\Large -Gestion de Projet- }
+\lhead{Bodet Augusting\\Milinaire Cédric}
+
+\title{Application d'aide a la décision\\
+\subtitle{Dossier d'initilalisation}
+\author{TP. Gestion de Projet\\
+Professeur: M.Ou-halima \\
+\ \\
+Version 1.0}
+\date{16/10/2019}}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{figure}[h]
+	\centering
+  \includegraphics[width=0.5\textwidth]{img/insa-logo}
+	\label{fig:logo}
+\end{figure}
+
+
+\begin{center}
+  \begin{tabular}{ | l | r | }
+    \hline
+    \textbf{Augustin Bodet}\\ \hline
+    \textbf{Cédric Milinaire }\\ \hline
+  \end{tabular}
+\end{center}
+
+\thispagestyle{empty}
+\pagebreak
+\vspace*{10pt}
+\tableofcontents
+\listoffigures
+\newpage
+\section{OBJET DU PROJET}
+Demande de conception, développement et finalement le déploiement d'un système d'information (SI) chargé d'effectuer des opérations de surveillance de sites pétroliers dudit client. Ce SI permettra ainsi de signaler toutes les anomalies détectées et permettra également grâce à une application d'aide à la décision d'assister les responsables à effectuer les choix adéquats. L'ensemble de données collectées est stocké sur un serveur afin de pouvoir effectuer des traitements statistiques pour une meilleure planification des interventions et une meilleure surveillance. Ce système permettra également d'assurer tous les suivis des interventions effectuées par les sociétés de maintenance. Ces dernières pourront accéder à un ensemble de services de ce système central, afin de lister et localiser les opérations de maintenance à effectuer. \\
+
+Il sera également possible d'effectuer des opérations de configuration et de maintenance a distance de l'ensemble des dispositifs matériel.\\
+
+Ce SI sera composé de 3 lots:
+\begin{itemize}
+\item \textquote{Lot Applications}: développement d'application utilisateurs ( gestion, configuration des captuers, maintenance). Ldéveloppement se fait selon un cycle en V (SGG, SGD, Codage et test unitaires, test d'intégration, tests de niveau système). 
+\item \textquote{Lot Matériel}: site central (serveurs et postes de travail), système des capteurs sur site
+\item \textquote{Lot Procédure}: procédures d'exploitation formalisées
+\end{itemize}
+\ \\
+L'équipe Milinaire Bodet prendra en charge le développement du lot Applications. La liste des livrables exacte est décrite dans le chapitre suivant. 
+\newpage
+\section{RESULTATS LIVRABLE ATTENDUS: PBS}
+\subsection{test}
+\begin{figure}[H]
+\caption{Diagramme OTP}
+\resizebox{!}{\textwidth}{\includegraphics[scale=1]{img/OTP}
+}
+\end{figure}
+\section{IDENTIFICATION DES ACTIVITES ET TACHES: WBS}
+\subsection{Lises des Activites et des Taches}
+\begin{center}
+\begin{figure}[H]
+\caption{Liste des taches}
+\includegraphics[trim={1cm 0 0 1cm},scale=0.63]{img/tache}
+\end{figure}
+\end{center}
+\subsection{Plan de charges}
+\begin{center}
+\begin{figure}[H]
+\includegraphics[scale=0.67]{img/charge1}
+\newline
+\includegraphics[scale=0.67]{img/charge2}
+\caption{Plan de charges}
+\end{figure}
+\end{center}
+\subsection{Diagramme de Gant}
+\begin{figure}[H]
+\includegraphics[angle=90,scale=0.86]{img/gantt}
+\caption{Diagramme de Gantt}
+\end{figure}
+\section{ORGANISATION DE L'EQUIPE:OBS}
+\begin{figure}[H]
+\includegraphics[scale=0.5]{img/equipe1}
+\newline
+\includegraphics[scale=0.5]{img/equipe2}
+\caption{Histogramme des charges par personne}
+\end{figure}
+
+\section{ANALYSE DES RISQUES}
+\subsection{Perte de Bobby au court du projet}
+Bobby étant le programmeur le plus expérimenté du projet, nous comptons sur lui pour une grande partie des taches. S’il lui arrive un contretemps et qu’il vient à nous quitter, nous devrions trouver des alternatives à cela. Nous ne pouvons faire appelle à d’autre programmeur pour palier à son manque. Les compétences en développement du chef de projet lui permettront de prendre une partie du travail laissé par Bobby. Il en résultera un retard certain mais moins important que prévu. Le retard serait de 10 à 40 jours en fonction de la date de départ.
+\section{MODALITES DE VALIDATION ET DE RECETTE: PAQ}
+\subsection{Procédure qualité}
+\texttt{Dossier de spécification:} Après la réalisation du dossier de spécification, nous vous enverrons par mail le dossier avec accusé de réception pour bien attester de la réception du dit dossier. Nous attendons votre retour sous  4 jours. Si vous nous communiquez des souhaits de changement pendant ce délai là, nous les prendrons en compte pour la suite du projet. Si ces demandes de modifications arrivent après ces 4 jours ouvrable, nous ne pouvons assurer des les incorporer dans la suite du projet.
+\subsection{Gestion Ressources}
+\begin{center}
+\begin{figure}[H]
+\includegraphics[scale=0.75]{img/budget}
+\caption{Principaux postes de dépenses}
+\end{figure}
+\end{center}
+
+\begin{appendices}
+\end{appendices}
+\end{document}
