@@ -27,7 +27,7 @@
 \usepackage{graphicx} 
 \newcommand{\name}{Insta.edit}
 
-%% Links im PDF
+\usepackage{ booktabs}
 \usepackage{hyperref}
 \usepackage{csquotes}
 \usepackage{rotating}
@@ -35,6 +35,14 @@
 \usepackage{fancyhdr}
 \usepackage{float}
 \usepackage[titles]{tocloft}
+
+%Tables
+%\usepackage[table,xcdraw,dvipsnames]{xcolor}
+%\usepackage{colortbl}
+\usepackage{booktabs}
+\usepackage{subcaption}
+\usepackage{rotfloat}
+
 \pagestyle{fancy}
 \rhead{\includegraphics[scale=0.15]{img/insa-logo}}
 \chead{\Large -PLD SIE- }
@@ -106,50 +114,49 @@ extérieures.
 \end{itemize}
 
 \newpage
-\section{RESULTATS LIVRABLE ATTENDUS: PBS}
+\section{RESULTATS LIVRABLE ATTENDUS}
+Afin d'établir une relation de qualité de client, il est préférable d'établir au préalable la liste des livrables avec leurs dates de rendu avant le début de projet. Voici donc un résumé des livrables. Il s'en suit une courte description de chaque tache. 
+\begin{table*}[h!]\centering
+    \caption{Liste des livrables attendus}
+    %\scriptsize
+    \begin{tabular}{l r}%
+        \toprule
+        \textbf{Dénomination} & \ \textbf{Date de rendu} \\%
+        \midrule%
+       Etude préalable :  & \\ \midrule
+       \hspace{0.33cm} Expression des besoins:  & \\ 
+       \hspace{0.66cm} Dossier de synthèse & 01.01.1970\\
+       \hspace{0.66cm} Benchmarking & 01.01.1970\\
+         \hspace{0.33cm}  Cible Fonctionelle: & \\
+                \hspace{0.66cm} Matrice d'impacts & 01.01.1970\\ 
+       \hspace{0.66cm}  Architecture Applicative Cible v0& 01.01.1970\\
+       \hspace{0.66cm}  Matrice des interfaces v0 & 01.01.1970\\ 
+         \hspace{0.33cm}   Discussion Client (Atelier Avanade): & \\
+                \hspace{0.66cm}  Matrice FIT/GAP v0& 01.01.1970\\
+         \hspace{0.33cm}   Construction de la solution: & \\
+                \hspace{0.66cm} Matrice FIT/GAP v1& 01.01.1970\\ 
+       \hspace{0.66cm} Matrice des interfaces v1& 01.01.1970 \\
+       \hspace{0.66cm}  Architecture Applicative Cible v1& 01.01.1970\\ 
+         \hspace{0.33cm}   Modélisation détaillée des processus: &\\
+                \hspace{0.66cm}  Dossier de description de la solution&01.01.1970\\ 
+       \hspace{0.66cm}  Rapport ARIS & 01.01.1970\\
+         \hspace{0.33cm}   Controle Qualité: & \\
+                \hspace{0.66cm} Plan d'Assurance Qualité & 01.01.1970\\ 
+                \midrule
+                Gestion de Projet: &\\
+                \midrule
+			\hspace{0.33cm}   Dossier d'initialisation & 01.01.1970\\
+			\hspace{0.33cm}   Tableau de bord d'avancement & 01.01.1970\\
+			\hspace{0.33cm}   Dossier bilan & 01.01.1970\\
+			\hspace{0.33cm}   Ordre du jour  & 01.01.1970\\
+        \midrule%
+        \bottomrule%
+   \end{tabular}%
+   \label{tab:sample_label}%
+   \end{table*}
 
-Etude préalable : 
-\begin{itemize}
-\item expression des besoins
-\begin{itemize}
-\item Dossier de synthèse
-\item Benchmarking
-\end{itemize}
-\item cible fonctionnelle
-\begin{itemize}
-\item Matrice d'impacts
-\item Architecture Applicative Cible v0
-\item Matrice des interfaces v0
-\end{itemize}
-\item Atelier Avanade
-\begin{itemize}
-\item Matrice FIT/GAP v0
-\end{itemize}
-\item Construction de la solution
-\begin{itemize}
-\item Matrice FIT/GAP v1
-\item Matrice des interfaces v1
-\item Architecture Applicative Cible v1
-\end{itemize}
-\item Modélisation Détaillée des processus
-\begin{itemize}
-\item Rapport ARIS
-\item Dossier de description de la solution
-\end{itemize}
-\item Contrôle Qualité
-\begin{itemize}
-\item Plan d'Assurance Qualité
-\end{itemize}
-\item [Plan projet]
-\end{itemize}
-\ \\
-Gestion de Projet : 
-\begin{itemize}
-\item Dossier d'Initialisation
-\item Tableau de bord d'avancement
-\item Dossier Bilan
-\item Ordre du jour
-\end{itemize}
+
+
 
 \section{OUTILS UTILISES}
 Afin de bien organiser notre projet, le choix de bons outils a été important. \\
